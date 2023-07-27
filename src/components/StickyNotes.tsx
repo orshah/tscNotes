@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import Btn from "../img/button.jpg";
 import Modal from "./Modal";
 
-interface StickyNotesProps {}
-
-const StickyNotes: React.FC<StickyNotesProps> = () => {
+const StickyNotes = () => {
   const [inputModal, setInputModal] = useState<boolean>(false);
   const [note, setNote] = useState<string>("");
   const [notes, setNotes] = useState<string[]>(() => {
