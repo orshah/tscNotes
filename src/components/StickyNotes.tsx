@@ -30,12 +30,14 @@ const StickyNotes = () => {
 
   return (
     <div className=" z-0 ">
-      <h1 className=" text-center text-5xl my-3">STICKY WALL</h1>
+      <h1 className=" text-center text-5xl mb-4 p-5 text-gray-50 font-bold">
+        STICKY WALL
+      </h1>
       <div className=" flex justify-center">
         <div className=" flex flex-row flex-wrap gap-2 justify-center ">
           {notes.map((el) => {
             return (
-              <h1 className=" text-4xl font-semi-bold font-press-start shadow-2xl flex border-solid border-2  w-[250px] h-[250px] overflow-auto px-3 break-all rounded-md">
+              <h1 className=" text-4xl font-semi-bold font-press-start shadow-2xl flex border-solid border-2  w-[250px] h-[250px] overflow-auto px-3 break-all rounded-md backdrop-blur-xl bg-white/30">
                 {el}
               </h1>
             );

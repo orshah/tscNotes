@@ -13,7 +13,7 @@ const Modal = (props: ModalProps) => {
   if (!open) return null;
   return (
     <div className="overlay absolute flex justify-center">
-      <div className=" flex flex-col border-solid border-2 rounded-md w-[400px] my-[200px] shadow-2xl">
+      <div className=" flex flex-col border-solid border-2 rounded-md w-[400px] my-[200px] shadow-2xl backdrop-blur-md bg-white/30">
         <p className=" font-bold self-end cursor-pointer p-2" onClick={onClose}>
           ✖️
         </p>
